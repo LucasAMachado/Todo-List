@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TodoList</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ToDoList</h1>
+
+      <div class="heading-container">
+        <form id="todo-form">
+          <input
+            type="text"
+            id="todo-input"
+            name="todo-input"
+            placeholder="Add task"
+          />
+          <button type="submit">Add</button>
+        </form>
+      </div>
+      <div class="body-div">
+        <div class="filter">
+          <input
+            type="text"
+            class="form-input-filter"
+            id="filter"
+            placeholder="Filter Items"
+          />
+        </div>
+
+        <div class="body">
+          <ul id="todo-list"></ul>
+        </div>
+
+        <button type="submit" class="clear-btn">Clear All</button>
+      </div>
+      <div class="edit-task-popup" style="display: none">
+        <div class="edit-task-popup-content">
+          <span class="close">&times;</span>
+          <p>What do you want to change the new name to?</p>
+          <input type="text" id="new-task-name" />
+          <button id="confirm-edit-btn">Confirm</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
